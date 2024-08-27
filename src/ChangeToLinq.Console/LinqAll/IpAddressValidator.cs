@@ -45,16 +45,16 @@ public static class IpAddressValidator
                 return false;
         }
 
-        int sequence = 1;
         foreach (string segment in segments)
         {
             if (segment.Length > 1 && segment[0] == '0')
                 return false;
+
             if (!int.TryParse(segment, out int number))
                 return false;
+
             if (number > max || number < 0)
                 return false;
-            sequence++;
         }
 
         return true;
