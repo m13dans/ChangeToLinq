@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\RefactorMaybe.Console\ChangeToLinq.Console.csproj" />
+    <ProjectReference Include="..\src\ChangeToLinq.Console\ChangeToLinq.Console.csproj" />
   </ItemGroup>
 
 </Project>

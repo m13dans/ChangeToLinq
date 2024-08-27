@@ -1,4 +1,4 @@
-namespace RefactorMaybe.Console.LinqAll;
+namespace ChangeToLinq.Console.LinqAll;
 
 public static class IpAddressValidator
 {

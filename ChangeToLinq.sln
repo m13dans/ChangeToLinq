@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0477CE0A-7F2C-4D8B-8022-0A85D0405DDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeToLinq.Console", "src\RefactorMaybe.Console\ChangeToLinq.Console.csproj", "{FFCEB9F5-D3CF-4CF0-91B9-85615A34A9E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeToLinq.Console", "src\ChangeToLinq.Console\ChangeToLinq.Console.csproj", "{FFCEB9F5-D3CF-4CF0-91B9-85615A34A9E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeToLinq.Test", "test\ChangeToLinq.Test.csproj", "{D0CF0DC5-167C-4824-B18B-5B59E5677015}"
 EndProject

@@ -1,4 +1,4 @@
-﻿using static RefactorMaybe.Console.LinqAll.IpAddressValidator;
+﻿using static ChangeToLinq.Console.LinqAll.IpAddressValidator;
 
 Console.WriteLine("Enter Ipv4 address : ");
 

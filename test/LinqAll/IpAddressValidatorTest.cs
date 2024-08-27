@@ -1,6 +1,6 @@
-using RefactorMaybe.Console.LinqAll;
+using ChangeToLinq.Console.LinqAll;
 
-namespace RefactorMaybe.Test.LinqAll;
+namespace ChangeToLinq.Test.LinqAll;
 
 public class IpAddressValidatorTest
 {
