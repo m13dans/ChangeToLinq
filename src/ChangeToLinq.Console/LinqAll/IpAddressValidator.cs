@@ -17,11 +17,11 @@ public static class IpAddressValidator
             && NoLeadingZero(segments)
             && IsValidNumber(segments);
 
-        static bool NoLeadingZero(IEnumerable<string> strings) =>
-            strings.Where(x => x.Length > 1).All(x => x.First() != '0');
+        static bool NoLeadingZero(IEnumerable<string> segments) =>
+            segments.Where(x => x.Length > 1).All(x => x.First() != '0');
 
-        static bool IsValidNumber(IEnumerable<string> strings) =>
-            strings.All((s) => int.TryParse(s, out int number) && ValidRange(number));
+        static bool IsValidNumber(IEnumerable<string> segments) =>
+            segments.All((s) => int.TryParse(s, out int number) && ValidRange(number));
 
         static bool ValidRange(int number) => number <= max && number >= 0;
     }
