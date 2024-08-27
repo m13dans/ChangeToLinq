@@ -13,18 +13,15 @@ public static class IpAddressValidator
         IEnumerable<string> reservedNumber = ["0.0.0.0", "10.0.0.0", "255.255.255.255"];
 
         return segments.Length == totalSegment
-            && NotInReservedNumber(input, reservedNumber)
+            && !reservedNumber.Contains(input)
             && NoLeadingZero(segments)
             && IsValidNumber(segments);
 
-        static bool IsValidNumber(IEnumerable<string> strings) =>
-            strings.All((s) => int.TryParse(s, out int number) && ValidRange(number));
-
-        static bool NotInReservedNumber(string input, IEnumerable<string> reservedNumbers) =>
-            !reservedNumbers.Contains(input);
-
         static bool NoLeadingZero(string[] strings) =>
             strings.Where(x => x.Length > 1).All(x => x.First() != '0');
+
+        static bool IsValidNumber(IEnumerable<string> strings) =>
+            strings.All((s) => int.TryParse(s, out int number) && ValidRange(number));
 
         static bool ValidRange(int number) => number <= max && number >= 0;
     }
